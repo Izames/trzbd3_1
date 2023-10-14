@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Страница каталога Магазин2</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Страница каталога Магазин2{% endblock %}
+{% block content %}
     <ul>
         <li><a href="{% url 'added' %}">Переход на страницу добавления товара</a></li>
         <li><a href="{% url 'shoped' %}">Переход назад на первую страницу каталога</a></li>
     </ul>
-
-</body>
-</html>
+{% endblock %}

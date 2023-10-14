@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Страница обратной связи</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Страница обратной связи{% endblock %}
+{% block content %}
     <a href="{% url 'shoped' %}">Переход назад на первую страницу каталога</a>
-</body>
-</html>
+{% endblock %}

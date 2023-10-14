@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Start Page</title>
-</head>
-<body>
-    <a href="{% url 'shoped' %}">Переход в магаз</a>
-    <a href="{% url 'apied' %}">Переход в Апи</a>
-    <a href="{% url 'carted' %}">Переход в корзину</a>
-    <a href="{% url 'personaled' %}">Переход вличный кабинет</a>
-</body>
-</html>
+
+{% extends "base.html" %}
+{% block title %}Main{% endblock %}
+{% block content %}
+    <ul>
+        <li><a href="{% url 'shoped' %}">Переход в магаз</a></li>
+        <li><a href="{% url 'apied' %}">Переход в Апи</a></li>
+        <li><a href="{% url 'carted' %}">Переход в корзину</a></li>
+        <li><a href="{% url 'personaled' %}">Переход вличный кабинет</a></li>
+    </ul>
+{% endblock %}
