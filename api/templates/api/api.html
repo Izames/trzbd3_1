@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Апи{% endblock %}
+{% block content %}
+    <ul>
+        <li><a href="{% url 'main' %}">назад на главную</a></li>
+        <li><a href="{% url 'apiedCr' %}">страница добавления</a></li>
+        <li><a href="{% url 'apiedCh' %}">страница просмотра</a></li>
+        <li><a href="{% url 'apiedDe' %}">страница удаления</a></li>
+        <li><a href="{% url 'apiedEd' %}">страница изменения</a></li>
+    </ul>
+{% endblock %}

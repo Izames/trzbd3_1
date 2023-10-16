@@ -18,13 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 
 import shop.routing
-import trzbd3_1.views as v
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', v.main, name="main"),
-    path('catalog/', include(shop.routing.urlpatterns)),
-    path('api/', v.api, name="apied"),
-    path('personal/', v.personal, name="personaled"),
-    path('cart/', v.cart, name="carted")
+    path('', include(shop.routing.urlpatterns)),
 ]

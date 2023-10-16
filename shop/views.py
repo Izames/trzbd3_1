@@ -12,3 +12,10 @@ def edit(request, a):
     return render(request, 'shop/editPage.html', {'a': a})
 def feedback(request):
     return render(request, 'shop/feedbackPage.html')
+
+
+def main(request):
+    return render(request, 'start_page.html')
+
+
+
