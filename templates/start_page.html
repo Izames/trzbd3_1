@@ -1,11 +1,13 @@
-
 {% extends "base.html" %}
 {% block title %}Main{% endblock %}
 {% block content %}
     <ul>
         <li><a href="{% url 'shoped' %}">Переход в магаз</a></li>
-        <li><a href="{% url 'apied' %}">Переход в Апи</a></li>
         <li><a href="{% url 'carted' %}">Переход в корзину</a></li>
-        <li><a href="{% url 'personaled' %}">Переход вличный кабинет</a></li>
     </ul>
+{% endblock %}
+{% block nav %}
+    <li><a href="{% url 'apied' %}">обратиться к апи</a></li>
+    <li><a href="{% url 'personaled' %}">Перейти вличный кабинет</a></li>
+    <li><a href="{% url 'fb' %}">пожаловаться</a></li>
 {% endblock %}

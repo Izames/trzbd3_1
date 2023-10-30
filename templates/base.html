@@ -5,8 +5,18 @@
     <title>{% block title %}{% endblock%}</title>
 </head>
 <body>
-    <link rel="import" href="header.html">
+{% block header %}
+    {% include "header.html" %}
+{% endblock %}
     {% block content %}{% endblock %}
-    <link rel="import" href="footer.html">
+
+    {% block additional_content %}
+
+    {% endblock %}
+
+    {% include "footer.html" %}
+    {% block nav %}
+        {% include "nav.html" %}
+    {% endblock %}
 </body>
 </html>

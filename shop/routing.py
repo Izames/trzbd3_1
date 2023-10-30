@@ -16,6 +16,6 @@ urlpatterns = [
     path('check/<int:a>/', include(urlpatterns2)),
     path('feedback/', v.feedback, name="fb"),
     path('api/', include(api.routing.urlpatterns)),
-    path('', include(cart.routing.urlpatterns)),
+    path('cart/', include(cart.routing.urlpatterns)),
     path('', include(cabinet.routing.urlpatterns)),
 ]
